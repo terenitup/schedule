@@ -16,7 +16,7 @@ class Library extends Component {
     console.log(data);
 
     return data.map((course, index) => {
-      return <LibraryCourse key={index}/>
+      return <LibraryCourse {...course} key={index}/>
     })
   }
 

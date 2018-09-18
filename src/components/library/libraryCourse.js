@@ -10,7 +10,7 @@ class LibraryCourse extends Component {
     return (
       <div className='library-course'>
         <div className='library-course__title-check'>
-            <label className='library-course__title'>Problem Solving</label>
+            <label className='library-course__title'>{ this.props.title }</label>
             { Icon('fas fa-check', 'library-course__icon') }
         </div>
 
@@ -19,7 +19,9 @@ class LibraryCourse extends Component {
 
         <div className='library-course__description'>
             <label>Course Description</label>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facere voluptatum accusantium non, eum cum temporibus quam saepe, inventore ad quae blanditiis. Unde sunt voluptas nihil quod alias minus ea!</p>
+            <p>
+              { this.props.description }
+            </p>
         </div>
 
       </div>
